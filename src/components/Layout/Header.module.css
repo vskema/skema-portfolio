@@ -1,0 +1,90 @@
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: #A9A9A9;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #A9A9A9;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #A9A9A9;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+}
+.menu-btn__burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+}
+/*------------------------------*/
+/*--------NAV-------------------*/
+/*------------------------------*/
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    visibility: hidden;
+}
+
+.nav.open {
+    visibility: visible;
+}
+.nav .menu-nav{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    height: 30vh;
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+    transform: translateY(0);
+}
+
+
+
