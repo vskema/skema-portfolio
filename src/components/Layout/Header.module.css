@@ -70,21 +70,32 @@ header {
 }
 .nav .menu-nav{
     display: flex;
-
     align-items: center;
     justify-content: space-around;
     height: 30vh;
     overflow: hidden;
     background: rgba(255,255,255,0.5);
-
     list-style-type: none;
-    padding-right: 1rem;
+    flex-wrap: wrap;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+.nav .menu-nav i {
+    display: block;
+    padding-bottom: 1rem;
 }
 .nav .menu-nav.open {
     transform: translateY(0);
 }
+.nav .menu-nav .menu-nav__link {
+    margin-top: 1rem;
+    color: #808080;
+
+}
+
+
+
 
 
 

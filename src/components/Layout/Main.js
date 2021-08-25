@@ -1,32 +1,32 @@
 import React from "react";
-import classes from "./Header.module.css";
+import classes from "./Main.module.css";
 
 const Main = props => {
 
 
     return (
-        <div>
-            <div>
-                <div>
-                    <a className={classes.socialIcons}>
-                        <i  className='fab fa-linkedin fa-2x' />
-                    </a>
-                    <a className={classes.socialIcons}>
-                        <i  className='fab fa-github fa-2x' />
-                    </a>
-                </div>
-            </div>
-            <div>
-                <section>
-                    <h2>Hi! My Name Is</h2>
-                    <h1>
-                        Vaidotas <span>Skema</span>
-                    </h1>
-                    <button>Susisiekime</button>
+        <React.Fragment>
+            <main>
 
-                </section>
-            </div>
-        </div>
+                <div className={classes['social-icons']}>
+                        <a className={classes}>
+                            <i  className='fab fa-linkedin fa-2x' />
+                        </a>
+                        <a className={classes}>
+                            <i  className='fab fa-github fa-2x' />
+                        </a>
+                </div>
+
+                <div className={classes.home}>
+                    <h1>Hi, My Name Is Vaidotas</h1>
+                    <h2>Frontend developer</h2>
+                    <p>I am entry level frontend developer, passionate about new experience, code and quality</p>
+
+                    <button>Contact Me</button>
+                </div>
+
+            </main>
+        </React.Fragment>
     );
 };
 

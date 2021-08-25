@@ -1,0 +1,55 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-top: 20vh;
+    overflow: hidden;
+    background: #fff;
+    align-items: center;
+}
+
+main .social-icons a {
+    display: block;
+    color: #6E57E0;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+main .home {
+    color: #202020;
+    margin-left: 2rem;
+}
+main .home h1 {
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+main .home h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #888888;
+    padding-bottom: 1rem;
+}
+main .home p {
+    font-size: 1rem;
+    color: #909090;
+    line-height: 1.2;
+}
+main .home button {
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: #6E57E0;
+    border: 1px solid #6E57E0;
+    padding: 15px 35px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+main .home button:hover {
+    background: transparent;
+    color: #202020;
+}

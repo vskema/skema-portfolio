@@ -10,7 +10,6 @@ const App = () => {
         <React.Fragment>
             <Header />
             <Main />
-            <Footer />
         </React.Fragment>
     );
 };

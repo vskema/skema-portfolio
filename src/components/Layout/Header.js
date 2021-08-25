@@ -13,7 +13,6 @@ const Header = props => {
     return (
         <React.Fragment>
              <header>
-
                  <div className={classes['menu-btn']} onClick={toggleMenu}>
                     <span className={open ? classes['menu-btn__burger'] +" "+ classes.open : classes['menu-btn__burger']}></span>
                  </div>
@@ -23,25 +22,24 @@ const Header = props => {
                          <li className={classes['menu-nav__item']}>
                              <i  className='fas fa-home fa-3x' />
                              <a className={classes['menu-nav__link']} href="./#">
-
                                  Home
                              </a>
                          </li>
-                         <li>
+                         <li className={classes['menu-nav__item']}>
                              <i  className='fas fa-user-alt fa-3x' />
                              <a className={classes['menu-nav__link']} href="./#">
 
                                  About Me
                              </a>
                          </li>
-                         <li>
-                             <i  className='fas fa-newspaper fa-3x' />
+                         <li className={classes['menu-nav__item']}>
+                            <i  className='fas fa-newspaper fa-3x' />
                              <a className={classes['menu-nav__link']} href="./#">
 
                                  Qualification
                              </a>
                          </li>
-                         <li>
+                         <li className={classes['menu-nav__item']}>
                              <i  className='fas fa-envelope fa-3x' />
                              <a className={classes['menu-nav__link']} href="./#">
 
