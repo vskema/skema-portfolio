@@ -14,6 +14,11 @@ main .social-icons a {
     color: #6E57E0;
     padding-left: 1rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+main .social-icons a:hover {
+    color: #4532a8;
 }
 
 main .home {
