@@ -1,0 +1,37 @@
+
+.container {
+    margin-top: 6rem;
+}
+
+.container h1 {
+    color: #202020;
+    text-align: center;
+    font-size: 2.2rem;
+}
+.container p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #909090;
+    margin-bottom: 3rem;
+}
+
+.education-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0;
+}
+.education-text__right {
+    width: 150px;
+    height: 100px;
+    padding-left: 5px;
+    border-left: 2px solid #4532a8;
+
+}
+.education-text__left {
+    width: 150px;
+    height: 100px;
+    padding-right: 5px;
+}
+

@@ -10,7 +10,6 @@ const Skills = props => {
             let percentage = skill.level + '%';
             return (
                 <div>
-
                         <div className={classes['skills__text']}>
                             <h4>{skill.subject}</h4>
                             <h4>{skill.level} %</h4>
@@ -18,7 +17,6 @@ const Skills = props => {
                         <div className={classes['skills-container']}>
                             <div style={{width: percentage}} className={classes['skills-container__value']}> </div>
                         </div>
-
                 </div>
             )
         })
