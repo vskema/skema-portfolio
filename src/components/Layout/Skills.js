@@ -5,6 +5,24 @@ import classes from './Skills.module.css';
 
 const Skills = props => {
 
+    const renderedSkills = () => {
+        return props.skills.map((skill) => {
+            let percentage = skill.level + '%';
+            return (
+                <div>
+
+                        <div className={classes['skills__text']}>
+                            <h4>{skill.subject}</h4>
+                            <h4>{skill.level} %</h4>
+                        </div>
+                        <div className={classes['skills-container']}>
+                            <div style={{width: percentage}} className={classes['skills-container__value']}> </div>
+                        </div>
+
+                </div>
+            )
+        })
+    }
 
     return (
         <React.Fragment>
@@ -15,47 +33,24 @@ const Skills = props => {
                 </div>
 
                 <div>
-
                     <div className={classes.skills}>
-                        <div className={classes['skills__text']}>
-                            <h4>HTML</h4>
-                            <h4>75%</h4>
-                        </div>
-                        <div className={classes['skills-container']}>
-                            <div className={classes['skills-container__value-html']}> </div>
+                        <div className={classes['sills-header_sub']}>
+                            <h3><i className="fas fa-desktop"></i> Frontend developer</h3>
                         </div>
 
+                        {renderedSkills()}
+
+                        <div className={classes['sills-header_sub']}>
+                            <h3><i className="fas fa-pencil-alt"></i> Designer</h3>
+                        </div>
                         <div className={classes['skills__text']}>
-                            <h4>CSS</h4>
-                            <h4>55%</h4>
+                            <h4>PHOTOSHOP</h4>
+                            <h4>35%</h4>
                         </div>
                         <div className={classes['skills-container']}>
-                            <div className={classes['skills-container__value-css']}> </div>
+                            <div className={classes['skills-container__value-ps']}> </div>
                         </div>
 
-                        <div className={classes['skills__text']}>
-                            <h4>JAVASCRIPT</h4>
-                            <h4>55%</h4>
-                        </div>
-                        <div className={classes['skills-container']}>
-                            <div className={classes['skills-container__value-js']}> </div>
-                        </div>
-
-                        <div className={classes['skills__text']}>
-                            <h4>REACT</h4>
-                            <h4>50%</h4>
-                        </div>
-                        <div className={classes['skills-container']}>
-                            <div className={classes['skills-container__value-react']}> </div>
-                        </div>
-
-                        <div className={classes['skills__text']}>
-                            <h4>REDUX</h4>
-                            <h4>25%</h4>
-                        </div>
-                        <div className={classes['skills-container']}>
-                            <div className={classes['skills-container__value-redux']}> </div>
-                        </div>
                     </div>
 
                 </div>

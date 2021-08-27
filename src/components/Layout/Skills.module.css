@@ -16,6 +16,12 @@
     margin-top: 1rem;
     color: #909090;
 }
+.sills-header_sub {
+    color: #909090;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
 
 .skills {
     width: 80%;
@@ -38,28 +44,13 @@
     margin-bottom: 2.5rem;
 }
 
-.skills-container__value-html {
+.skills-container__value {
     height: 5px;
     background: #6E57E0;
-    width: 75%;
 }
-.skills-container__value-css {
+
+.skills-container__value-ps {
     height: 5px;
     background: #6E57E0;
-    width: 55%;
-}
-.skills-container__value-js {
-    height: 5px;
-    background: #6E57E0;
-    width: 55%;
-}
-.skills-container__value-react {
-    height: 5px;
-    background: #6E57E0;
-    width: 50%;
-}
-.skills-container__value-redux {
-    height: 5px;
-    background: #6E57E0;
-    width: 25%;
+    width: 35%;
 }
