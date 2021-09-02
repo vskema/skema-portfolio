@@ -4,6 +4,7 @@ import Header from "./components/Layout/Header";
 import Main from "./components/Layout/Main";
 import Skills from "./components/Layout/Skills";
 import Qualification from "./components/Layout/Qualification";
+import Contact from "./components/Layout/ContactMe";
 import Footer from "./components/Layout/Footer";
 
 const data = [
@@ -31,24 +32,24 @@ const data = [
 
 const courses = [
     {
-        course: 'Kaunas University of Technology',
-        year: '2007 - 2011',
-        degree: 'Bachelor degree in electronic engineering'
+        school: 'Kaunas University of Technology',
+        degree: 'Bachelor degree in electronic engineering',
+        year: '2007 - 2011'
     },
     {
-        course: 'PHP beginners course',
-        year: '2017. Duration 9 weeks',
-        degree: 'PHP basics'
+        school: 'Code Academy',
+        degree: 'PHP basics',
+        year: '2017. Duration 9 weeks'
     },
     {
-        course: 'Web developer course',
-        year: '2018. Duration 6 month',
-        degree: 'CSS, JAVASCRIPT basics'
+        school: 'Baltijos technologijų institutas',
+        degree: 'JavaScript, CSS, HTML basics',
+        year: '2018. Duration 6 month'
     },
     {
-        course: 'Quality assurance course',
-        year: '2019. Duration 8 weeks',
-        degree: 'Quality assurance basics'
+        school: 'Kaunas Coding School',
+        degree: 'Quality assurance basics',
+        year: '2019. Duration 8 weeks'
     }
 ]
 
@@ -60,6 +61,7 @@ const App = () => {
             <Main />
             <Skills skills={data} />
             <Qualification courses={courses}/>
+            <Contact />
         </React.Fragment>
     );
 };

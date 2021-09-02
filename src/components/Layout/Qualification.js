@@ -10,8 +10,9 @@ const Qualification = props => {
                 return (
                     <div className={classes['education-wrapper']}>
                        <div className={classes['education-text__left']}>
-                           {course.course}
-                           {course.year}
+                           <h3>{course.school}</h3>
+                           <p>{course.degree}</p>
+                           <p>{course.year}</p>
                        </div>
 
                        <div className={classes['education-text__right']}>
@@ -27,8 +28,9 @@ const Qualification = props => {
                         </div>
 
                         <div className={classes['education-text__right']}>
-                            {course.course}
-                            {course.year}
+                            <h3>{course.school}</h3>
+                            <p>{course.degree}</p>
+                            <p>{course.year}</p>
                         </div>
                     </div>
                 )

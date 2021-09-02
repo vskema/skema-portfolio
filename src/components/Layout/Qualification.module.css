@@ -24,14 +24,36 @@
 }
 .education-text__right {
     width: 150px;
-    height: 100px;
-    padding-left: 5px;
-    border-left: 2px solid #4532a8;
 
+    padding-left: 5px;
+    border-left: 2px solid #6E57E0;
 }
 .education-text__left {
     width: 150px;
-    height: 100px;
+
     padding-right: 5px;
+}
+.education-text__left h3 {
+    text-align: center;
+    color: #101010;
+    font-size: 1.2rem;
+}
+.education-text__right h3 {
+    text-align: center;
+    color: #101010;
+    font-size: 1.2rem;
+}
+
+.education-text__left p {
+    text-align: right;
+    color: #787878;
+    margin-bottom: 0;
+
+}
+.education-text__right p {
+    text-align: left;
+    color: #787878;
+    margin-bottom: 0;
+
 }
 
