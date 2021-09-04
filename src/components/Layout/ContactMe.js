@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
+import emailjs from 'emailjs-com';
 
 import classes from './Contact.module.css';
 
 const Contact = () => {
+
+    const [sendStatus, setSetStatus] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_x0kx1nh', 'template_f0xll6u', e.target, 'user_YHGpFFNndzBmZ6KAxwZmg')
+            .then((result) => {
+                setSetStatus(true);
+                setTimeout(()=> {
+                    setSetStatus(false);
+                },1000)
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+
+    };
 
     return (
         <div className={classes['container']}>
@@ -10,24 +28,28 @@ const Contact = () => {
 
             <div className={classes['contact-form']}>
 
-                <form>
+                <form onSubmit={sendEmail}>
                     <p>Send Message</p>
 
+                    <div className={sendStatus ? classes['sent'] : classes['show']}>
+                        <p>Message sent</p>
+                    </div>
+
                     <div className={classes['contact-form__box']}>
-                        <input type='text' name='' required='required' />
+                        <input type='text' name='name' required='required' />
                         <span>Name</span>
                     </div>
                     <div className={classes['contact-form__box']}>
-                        <input type='text' name='' required='required' />
+                        <input type='text' name='email' required='required' />
                         <span>Email</span>
                     </div>
                     <div className={classes['contact-form__box']}>
-                        <textarea rows="4" required='required'></textarea>
+                        <textarea name='message' rows="4" required='required'></textarea>
                         <span>Type your Message...</span>
                     </div>
 
                     <div className={classes['contact-form__box']}>
-                        <input type='submit' name='' value='Send' />
+                        <input type='submit' value='Send' />
                     </div>
 
                 </form>

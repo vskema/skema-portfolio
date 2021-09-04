@@ -95,3 +95,19 @@
 .contact-form .contact-info .contact-info__box i {
     color: #6E57E0;
 }
+
+
+.sent p {
+    background: rgba(130, 208, 27, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 20px;
+    margin-bottom: 0.8rem;
+    color: #202020;
+}
+.show{
+    visibility: hidden;
+}
