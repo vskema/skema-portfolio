@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <div className={classes['container']}>
+        <div className={classes['container']} id='contact-me'>
             <h1>Contact Me</h1>
 
             <div className={classes['contact-form']}>

@@ -70,20 +70,28 @@ header {
 }
 .nav .menu-nav{
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-around;
     height: 30vh;
     overflow: hidden;
-    background: rgba(255,255,255,0.5);
+    background: #F0F0F0;
     list-style-type: none;
     flex-wrap: wrap;
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
     text-align: center;
 }
+
+
+.nav .menu-nav .menu-nav__item {
+    flex-basis: 50%;
+    text-align: center;
+}
+
 .nav .menu-nav i {
     display: block;
     padding-bottom: 1rem;
+    margin-top: 2rem;
 }
 .nav .menu-nav.open {
     transform: translateY(0);

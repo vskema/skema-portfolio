@@ -62,6 +62,7 @@ const App = () => {
             <Skills skills={data} />
             <Qualification courses={courses}/>
             <Contact />
+            <Footer />
         </React.Fragment>
     );
 };

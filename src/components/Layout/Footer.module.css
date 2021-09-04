@@ -1,0 +1,39 @@
+.container {
+    margin-top: 6rem;
+    background: #6E57E0;
+}
+
+.container .header-wrapper h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+    padding-top: 2rem;
+}
+.container .header-wrapper p {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.container .social-icons i {
+    color: #fff;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .social-icons i:hover {
+    color: #4532a8;
+}
+
+.container .copyright p {
+    color: #fff;
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

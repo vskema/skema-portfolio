@@ -19,6 +19,7 @@ const Header = props => {
 
                  <nav className={open ? classes.nav +" "+ classes.open : classes.nav}>
                      <ul className={open ? classes.nav +" "+classes['menu-nav'] +" "+classes.open : classes.nav +" "+ classes['menu-nav']}>
+
                          <li className={classes['menu-nav__item']}>
                              <i  className='fas fa-home fa-3x' />
                              <a className={classes['menu-nav__link']} href="./#">
