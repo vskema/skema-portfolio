@@ -40,7 +40,7 @@ const Qualification = props => {
 
     return (
         <div className={classes['container']}>
-            <h1>Qualification</h1>
+            <h1 id='qualification' >Qualification</h1>
             <p>My education / curses</p>
 
 

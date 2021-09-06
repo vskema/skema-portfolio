@@ -111,3 +111,28 @@
 .show{
     visibility: hidden;
 }
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1024px) {
+    .contact-form {
+        display: flex;
+    }
+    form {
+        order: 2;
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .contact-form .contact-info {
+        order: 1;
+        margin-top: 7rem;
+        margin-right: 3rem;
+    }
+    .contact-form p {
+        display: none;
+    }
+}
+@media screen and (min-width: 1600px) {
+
+}

@@ -18,12 +18,11 @@ const Main = props => {
                 </div>
 
                 <div className={classes.home}>
-                    <h1>Hi, My Name Is Vaidotas</h1>
+                    <h1 id='about-me'>Hi, My Name Is Vaidotas</h1>
                     <h2>Frontend developer</h2>
                     <p>I am entry level frontend developer, passionate about new experience, code and quality</p>
 
-                    <button>Contact Me</button>
-                    <a href='#contact-me'>Contact Me</a>
+                    <button><a href='#contact-me'>Contact Me</a></button>
                 </div>
 
             </main>

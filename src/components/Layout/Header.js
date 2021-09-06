@@ -21,29 +21,30 @@ const Header = props => {
                      <ul className={open ? classes.nav +" "+classes['menu-nav'] +" "+classes.open : classes.nav +" "+ classes['menu-nav']}>
 
                          <li className={classes['menu-nav__item']}>
-                             <i  className='fas fa-home fa-3x' />
-                             <a className={classes['menu-nav__link']} href="./#">
+
+                             <a href='#about-me' onClick={()=>setOpen(!open)} className={classes['menu-nav__link']} >
+                                 <i  className='fas fa-home fa-3x' />
                                  Home
                              </a>
                          </li>
-                         <li className={classes['menu-nav__item']}>
-                             <i  className='fas fa-user-alt fa-3x' />
-                             <a className={classes['menu-nav__link']} href="./#">
+                         <li onClick={()=>setOpen(!open)} className={classes['menu-nav__item']}>
 
+                             <a href='#about-me' className={classes['menu-nav__link']}>
+                                 <i  className='fas fa-user-alt fa-3x' />
                                  About Me
                              </a>
                          </li>
                          <li className={classes['menu-nav__item']}>
-                            <i  className='fas fa-newspaper fa-3x' />
-                             <a className={classes['menu-nav__link']} href="./#">
 
+                             <a href='#qualification' onClick={()=>setOpen(!open)} className={classes['menu-nav__link']}>
+                                 <i  className='fas fa-newspaper fa-3x' />
                                  Qualification
                              </a>
                          </li>
                          <li className={classes['menu-nav__item']}>
-                             <i  className='fas fa-envelope fa-3x' />
-                             <a className={classes['menu-nav__link']} href="./#">
 
+                             <a onClick={()=>setOpen(!open)} href='#contact-me' className={classes['menu-nav__link']}>
+                                 <i  className='fas fa-envelope fa-3x' />
                                  Contact Me
                              </a>
                          </li>

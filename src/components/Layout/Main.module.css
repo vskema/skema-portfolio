@@ -54,6 +54,12 @@ main .home button {
     font-size: 1rem;
     transition: 0.4s;
 }
+main .home button a{
+    color: #fff;
+}
+main .home button a:hover{
+    color: #202020;
+}
 main .home button:hover {
     background: transparent;
     color: #202020;

@@ -2,7 +2,7 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .menu-btn {
@@ -92,6 +92,7 @@ header {
     display: block;
     padding-bottom: 1rem;
     margin-top: 2rem;
+    color: #6E57E0;
 }
 .nav .menu-nav.open {
     transform: translateY(0);
@@ -99,11 +100,36 @@ header {
 .nav .menu-nav .menu-nav__link {
     margin-top: 1rem;
     color: #808080;
-
 }
 
+@media screen and (min-width: 768px) {
 
-
-
-
-
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+    }
+    .nav .menu-nav {
+        display: flex;
+        transform: translateY(0);
+        background: #fff;
+        height: 3rem;
+    }
+    .nav .menu-nav .menu-nav__item {
+        flex-basis: 25%;
+        margin-top: 1rem;
+        height: 2rem;
+    }
+    .nav .menu-nav .menu-nav__link {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        color: #6E57E0;
+    }
+    .nav .menu-nav .menu-nav__link:hover {
+        color: #362b6a;
+    }
+    .nav .menu-nav i {
+        display: none;
+    }
+}

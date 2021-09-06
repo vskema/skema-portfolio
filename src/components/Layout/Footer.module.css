@@ -37,3 +37,55 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+@media screen and (min-width: 768px) {
+    .container .header-wrapper h1{
+        margin-left: 4rem;
+        font-size: 2rem;
+    }
+    .container .header-wrapper p {
+        margin-left: 4rem;
+        font-size: 1.2rem;
+    }
+    .container .social-icons  {
+        margin-left: 4rem;
+    }
+    .container .social-icons i  {
+        margin: 0;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container .header-wrapper h1{
+        margin-left: 20%;
+        font-size: 2rem;
+    }
+    .container .header-wrapper p {
+        margin-left: 20%;
+        font-size: 1.2rem;
+    }
+    .container .social-icons  {
+        margin-left: 20%;
+    }
+    .container .social-icons i  {
+        margin: 0;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .container .header-wrapper h1{
+        margin-left: 30%;
+        font-size: 2rem;
+    }
+    .container .header-wrapper p {
+        margin-left: 30%;
+        font-size: 1.2rem;
+    }
+    .container .social-icons  {
+        margin-left: 30%;
+    }
+    .container .social-icons i  {
+        margin: 0;
+        padding-right: 1rem;
+    }
+}
