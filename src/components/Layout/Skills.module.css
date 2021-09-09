@@ -54,3 +54,27 @@
     background: #6E57E0;
     width: 35%;
 }
+
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1024px) {
+    .skills {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .frontend-container {
+        width: 40%;
+    }
+    .designer-container {
+        width: 40%;
+
+    }
+}
+@media screen and (min-width: 1600px) {
+
+}

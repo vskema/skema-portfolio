@@ -32,12 +32,14 @@ const Skills = props => {
 
                 <div>
                     <div className={classes.skills}>
+                        <div className={classes['frontend-container']}>
                         <div className={classes['sills-header_sub']}>
                             <h3><i className="fas fa-desktop"></i> Frontend developer</h3>
                         </div>
 
                         {renderedSkills()}
-
+                        </div>
+                        <div className={classes['designer-container']}>
                         <div className={classes['sills-header_sub']}>
                             <h3><i className="fas fa-pencil-alt"></i> Designer</h3>
                         </div>
@@ -48,7 +50,7 @@ const Skills = props => {
                         <div className={classes['skills-container']}>
                             <div className={classes['skills-container__value-ps']}> </div>
                         </div>
-
+                        </div>
                     </div>
 
                 </div>
