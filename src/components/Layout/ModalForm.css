@@ -3,7 +3,7 @@
     padding: 5% 10%;
 }
 
-p {
+.about-me {
     text-align: center;
     font-size: 1.5rem;
     color: #909090;
@@ -44,3 +44,4 @@ p {
     font-size: 0.8rem;
     transform: translateY(-20px);
 }
+
