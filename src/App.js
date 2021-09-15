@@ -63,6 +63,7 @@ const App = () => {
             <Qualification courses={courses}/>
             <Contact />
             <Footer />
+            <div>labas</div>
         </React.Fragment>
     );
 };
