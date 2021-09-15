@@ -1,0 +1,77 @@
+
+
+:root {
+    --primary: #6E57E0;
+    --warning: #ffd028;
+    --danger: #eb3f27;
+    --success: #75fa83;
+    --white: #fdfdfd;
+    --dark: #181717;
+}
+
+.btn {
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    letter-spacing: 1px;
+    background: transparent;
+    margin-top: 2rem;
+}
+.btn:hover {
+    color: #202020;
+    background: transparent;
+}
+
+/* -------------------------- */
+
+.btn--primary--solid {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+}
+.btn--warning--solid {
+    background-color: var(--warning);
+    color: var(--dark);
+    border: none;
+}
+.btn--danger--solid {
+    background-color: var(--danger);
+    color: var(--white);
+    border: none;
+}
+.btn--success--solid {
+    background-color: var(--success);
+    color: var(--white);
+    border: none;
+}
+.btn--primary--outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+.btn--warning--outline {
+    background-color: transparent;
+    border: 2px solid var(--warning);
+    color: var(--warning);
+}
+.btn--danger--outline {
+    background-color: var(--danger);
+    color: var(--danger);
+    border: none;
+}
+.btn--success--outline {
+    background-color: var(--success);
+    color: var(--success);
+    border: none;
+}
+
+/* ----------------------- */
+
+.btn--medium {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.btn--large {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}

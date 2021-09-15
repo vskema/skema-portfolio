@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Main.module.css";
+import Button from "../UI/Button";
 
 const Main = props => {
 
@@ -22,7 +23,13 @@ const Main = props => {
                     <h2>Frontend developer</h2>
                     <p>I am entry level frontend developer, passionate about new experience, code and quality</p>
 
-                    <button><a href='#contact-me'>Contact Me</a></button>
+                    <Button
+                        type='button'
+                        buttonStyle='btn--primary--solid'
+                        buttonSize='btn--medium'
+                    >
+                        Contact me
+                    </Button>
                 </div>
 
             </main>
