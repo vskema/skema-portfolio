@@ -14,8 +14,8 @@
     cursor: pointer;
     transition: 0.4s ease;
     letter-spacing: 1px;
-    background: transparent;
     margin-top: 2rem;
+
 }
 .btn:hover {
     color: #202020;
@@ -70,6 +70,7 @@
 .btn--medium {
     padding: 10px 20px;
     font-size: 1rem;
+    margin-right: 2rem;
 }
 .btn--large {
     padding: 15px 30px;

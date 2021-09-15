@@ -27,6 +27,7 @@ const Main = props => {
                         type='button'
                         buttonStyle='btn--primary--solid'
                         buttonSize='btn--medium'
+                        onClick={props.onShowForm}
                     >
                         Contact me
                     </Button>
