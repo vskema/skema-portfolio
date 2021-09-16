@@ -10,8 +10,8 @@ const ModalForm = props => {
 
     return (
         <Modal onClose={props.onClose}>
-            <div className='container'>
-            <form>
+            <div className='contact-me--container'>
+            <form className="form--container">
                 <p className='about-me'>Send Message</p>
                 <div className={'contact-form__box'}>
                     <input type='text' name='name' required='required' />
